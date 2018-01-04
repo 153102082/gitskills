@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="Resource-type" content="Document">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/canvas.js"></script>
+
+
+
+    <title>摇摇无期</title>
+
+
+</head>
+<body>
+
+    <div class="loading" style="display: block">
+        <p>加载中...</p>
+    </div>
+    <div class="wrap" style="display:none ">
+        <div class="audio-controls">
+            <img class="audio-button" src="img/music.png" >
+        </div>
+        <audio style="display: none" src="music/music.mp3" class="audio-music" preload="autoplay" controls loop></audio>
+        <audio style="display: none" src="music/yao.mp3" class="yao-music" preload="autoplay" controls ></audio>
+        <div class="all-page">
+            <div class="bg-animate animate1" style="display: block">
+                <img src="img/B1.png">
+                <img src="img/B2.png">
+                <img src="img/B3.png">
+
+                <img src="img/B1.png">
+                <img src="img/B2.png">
+                <img src="img/B3.png">
+
+            </div>
+            <div class="section section1"  style="display: block">
+                <img class="bg1" src="img/bg1.jpg">
+                <div class="content">
+                    <img src="img/car2.png" class="car2">
+                    <img class="y3" src="img/y3.png">
+                    <img class="y2" src="img/y2.png">
+                    <img class="y2a" src="img/y2.png">
+                    <img class="p1-1" src="img/p1-1.png">
+                    <img class="p1-2" src="img/p1-2.png">
+                    <!-- <img class='logo' src='img/logo.png'> -->
+                </div>
+
+            </div>
+            <div class="page page1"style="display: none">
+                <div class="a1-2">
+                    <div class="a1-2a"></div>
+                </div>
+                <img class="a1-4" src="img/a1-4.png">
+                <img class="a1-3" src="img/a1-3.png">
+                <img class="a1-1" src="img/a1-1.png">
+                <img class="btn" src="img/btn.png">
+            </div>
+            <div class="page page2" style="display: none">
+                <div class="a2-2">
+                    <div class="a2-2a"></div>
+                </div>
+                <img class="a1-4" src="img/a2-4.png">
+                <img class="a2-3" src="img/a2-3.png">
+                <img class="a2-1" src="img/a2-1.png">
+                <img class="btn" src="img/btn.png">
+            </div>
+            <div class="page page3" style="display: none">
+                <div class="a3-2">
+                    <div class="a3-2a"></div>
+                </div>
+                <img class="a3-4" src="img/a3-4.png">
+                <img class="a3-3" src="img/a3-3.png">
+                <img class="a3-1" src="img/a3-1.png">
+                <img class="a3-5" src="img/a3-5.png">
+                <img class="a3-6" src="img/a3-6.png">
+                <img class="btn" src="img/btn.png">
+            </div>
+            <div class="page page4" style="display: none">
+                <div class="a4-2">
+                    <div class="a4-2a"></div>
+                </div>
+                <img class="a5-4" src="img/a4-4.png">
+                <img class="a4-3" src="img/a4-3.png">
+                <img class="a4-1" src="img/a4-1.png">
+                <img class="btn btn1" src="img/btn.png">
+            </div>
+            <div class="page page5" style="display: none">
+                <img class="a5-6" src="img/a5-6.png">
+                <img class="a5-5" src="img/a5-5.png">
+                <img class="a4-4" src="img/a5-4.png">
+                <div class="a5-2">
+                    <div class="a5-2a"></div>
+                </div>
+                <img class="a5-3" src="img/a5-3.png">
+                <img class="a5-1" src="img/a5-1.png">
+                <img class="btn btn1" src="img/btn.png">
+            </div>
+            <div class="page page6" style="display: none">
+                <div class="a6-2">
+                    <div class="a6-2a"></div>
+                </div>
+                <img class="a5-4" src="img/a6-4.png">
+                <img class="a6-1" src="img/a6-1.png">
+                <img class="btn" src="img/btn.png">
+            </div>
+            <div class="page page7" style="display: none">
+                <div class="a7-2">
+                    <div class="a7-2a"></div>
+                </div>
+                <img class="a7-4" src="img/a7-4.png">
+                <img class="a7-1" src="img/a7-1.png">
+                <img class="btn btn1" src="img/btn.png">
+            </div>
+            <div class="bg-animate animate2" style="display:none ; left: -15px;">
+                <img src="img/B4.png">
+                <img src="img/B4.png">
+                <img src="img/B4.png">
+
+                <img src="img/B4.png">
+                <img src="img/B4.png">
+                <img src="img/B4.png">
+
+            </div>
+            <div class="section section2" style="display:none ">
+
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/car2.png" class="car2">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p2-1" src="img/p2-1.png">
+                    <img class="an1-1" src="img/an1-1.png">
+                    <img class="an1-2" src="img/an1-2.png">
+                </div>
+            </div>
+            <div class="section section3" style="display: none">
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/car2.png" class="car2">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p3-1" src="img/p3-1.png">
+                    <img class="an2-1a an3" src="img/an2-1.png">
+                    <img class="an2-2a an3" src="img/an2-2.png">
+                </div>
+            </div>
+            <div class="section section4" style="display: none">
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/car2.png" class="car2">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p4-1" src="img/p4-1.png">
+                    <img class="an3-1" src="img/an3-1.png">
+                    <img class="an3-2" src="img/an3-2.png">
+                </div>
+            </div>
+            <div class="section section5" style="display: none">
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/car2.png" class="car2">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p5-1" src="img/p5-1.png">
+                    <img class="an2-1b an2" src="img/an2-1.png">
+                    <img class="an2-2b an2" src="img/an2-2.png">
+                </div>
+            </div>
+            <div class="section section6" style="display: none">
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/car2.png" class="car2">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p6-1" src="img/p6-1.png">
+                    <img class="an2-1c" src="img/an2-1.png">
+                    <img class="an2-2c" src="img/an2-2.png">
+                </div>
+            </div>
+            <div class="section section7" style="display: none">
+                <img class="bg2" src="img/bg2.jpg">
+                <div class="content">
+                    <img class="logo" src="img/logo.png">
+                    <img src="img/y1.png" class="y1">
+                    <img class="p7-1" src="img/p7-1.png">
+                    <img class="p7-2" src="img/p7-2.png">
+                    <input class="qi" id="qi" type="number" value="" maxlength="4">
+                    <img src="img/qd_btn.png" class="qd_btn">
+                </div>
+            </div>
+            <div class="section section8" style="display: none">
+                <img src="img/p9-5a.png" class="p9-5">
+                <img src="img/bg3-1.png" class="bg3">
+                <img src="img/p9-2a.png" class="p9-2">
+                <img src="img/p9-3.png" class="p9-3" style="display: none">
+
+                <img src="img/cj_btn.png" class="cj_btn">
+                <img src="img/fx_btn.png" class="fx_btn" >
+                <div class="p9-1">
+                    <p class="wb"><span class="name">沙漠</span>,已摇号<span class="num">15</span>期</p>
+                </div>
+                <div class="shade" id="shade" style="display: none">
+                    <img class="p9-4" src="img/p9-4.png">
+                </div>
+            </div>
+            <div class="section section9" style="display:none">
+                <img class="y3" src="img/y3.png">
+                <img class="y2" src="img/y2.png">
+                <img class="y2a" src="img/y2.png">
+                <img src="img/turnplate-bg.png" class="p-3">
+                <img src="img/001.png" id="001-img" style="display:none;">
+                <img src="img/002.png" id="002-img" style="display:none;">
+                <img src="img/003.png" id="003-img" style="display:none;">
+                <img src="img/004.png" id="004-img" style="display:none;">
+                <img src="img/005.png" id="005-img" style="display:none;">
+                <img src="img/006.png" id="006-img" style="display:none;">
+                <img src="img/007.png" id="007-img" style="display:none;">
+                <img src="img/008.png" id="008-img" style="display:none;">
+                <img src="img/009.png" id="009-img" style="display:none;">
+                <div class="banner">
+                    <div class="turnplate">
+                        <canvas class="item" id="wheelcanvas" width="240px" height="240px"></canvas>
+                        <img class="pointer" src="img/turnplate-pointer.png">
+                    </div>
+                </div>
+
+
+                <img class="but1" src="img/but1.png" >
+                <img class="but2" src="img/but2.png" >
+                <img class="gz" src="img/gz.png">
+                <div class="gz1" id="gz1"  style="display:none; z-index:999;"><img src="img/gz1.png"></div>
+                <div class="prize" style="display: none">
+                    <img class="J" src="">
+                    <img class="info" src="img/info.png">
+                    <div class="formUser" method="post" name="formUser" id="formUser" onsubmit="return checkInfo(this);">
+
+                        <input type="hidden" name="type1" id="type1" value="还没有">
+                        <input type="hidden" name="type2" id="type2" value="">
+                        <input type="hidden" name="type3" id="type3" value="">
+
+                        <input class="ty" type="text" name="name" id="name" value="" maxlength="20" placeholder="请输入姓名">
+                        <input class="ty" type="text" name="phone" id="phone" value="" maxlength="11" placeholder="请输入电话">
+                        <input class="ty" type="text" name="add" id="add" value="" maxlength="40" placeholder="请输入地址">
+                        <input class="ty" type="text" name="email" id="email" value="" maxlength="40" placeholder="请输入邮箱">
+                        <input class="tj" id="tj" type="image" src="img/tj.png" data="">
+                    </div>
+                    <img class="ts" src="img/ts.png">
+                </div>
+            </div>
+            <div class="gz1" id="gz1" style="display: none; z-index: 999;"><img src="img/gz1.png"></div>
+            <div class="cx" id="cx"  style="display: none;"><img src="img/cx.png"></div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>
