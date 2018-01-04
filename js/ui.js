@@ -13,15 +13,15 @@ function preLoadImg(){
 }
 
 
-setTimeout(function(){
-    $(".loading").hide();
-    $(".wrap").show();
 
-},4000);
 
 $(function(){
     preLoadImg();
+    setTimeout(function(){
+        $(".loading").hide();
+        $(".wrap").show();
 
+    },8000);
 
 
     var time1=setInterval(function(){
