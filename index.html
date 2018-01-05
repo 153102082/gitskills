@@ -262,8 +262,41 @@
 
 
     </div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    wx.config({
+        appId: 'wx3706fe82cebc4698',
+        timestamp: '1515150410',
+        nonceStr: '0yh7M7jDMPMMAPBl',
+        signature: '87b44b54da36ef07fcf5c3071b1f2e24e49c0572',
+        jsApiList: [
+            'onMenuShareAppMessage',
+            'onMenuShareTimeline'
+        ]
+    });
 
-
+    wx.ready(function () {
+        wx.onMenuShareAppMessage({
+            title: '摇摇无期',
+            desc: '关于北京摇号，我想说……',
+            link: 'http://htmlpreview.github.io/?https://github.com/153102082/gitskills/blob/features/index.html',
+            imgUrl: 'http://h5.3qkk.com/bqaa/img/fx.jpg',
+            trigger: function (res) {
+            },
+            success: function (res) {
+            }
+        });
+        wx.onMenuShareTimeline({
+            title: '关于北京摇号，我想说……',
+            link: 'http://htmlpreview.github.io/?https://github.com/153102082/gitskills/blob/features/index.html',
+            imgUrl: 'http://h5.3qkk.com/bqaa/img/fx.jpg',
+            trigger: function (res) {
+            },
+            success: function (res) {
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
